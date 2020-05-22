@@ -35,8 +35,9 @@ def main():
             if first:
                 first = False
             else:
-                header_row+=', '
-            header_row+='"' + item + '"'
+                header_row +=', '
+            #header_row +='"' + item + '"'
+            header_row += item
         header_row+=') VALUES '
 
         # Set a counter, since there can't be more than 1000 inserts at a time
